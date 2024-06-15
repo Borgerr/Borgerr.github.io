@@ -1,0 +1,76 @@
+/* Nord color scheme: https://www.nordtheme.com/ */
+
+body {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 1.4;
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: #2e3440;
+  color: #e5e9f0;
+}
+
+a {
+  text-decoration: none;
+  color: #81a1c1;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: square;
+  padding-left: 1em;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/*
+code {
+  white-space: pre;
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  background: #ecf0f1;
+  border: solid 1px #bdc3c7;
+}
+*/
+
+hr {
+  border: solid 1px #e5e9f0;
+}
+
+/*
+table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  word-break: break-word;
+}
+
+td, th {
+  border: 1px solid #bdc3c7;
+  text-align: start;
+  padding: 0.5rem;
+}
+
+th {
+  background-color: #ecf0f1;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+  border-left: solid 5px #3498db;
+}
+*/
+
