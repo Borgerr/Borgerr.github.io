@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="keywords" content="firmware developer, software developer, hire this man, wow he's so cool, awesome dev guy">
+  <title>Mintsuki infrastructure things</title>
+  <link rel="stylesheet" href="../base.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+ </head>
+ <body>
+  <nav>
+   <div>
+    <a href="../index.html">Main Page</a>&emsp;
+    <a href="./index.html">Blog</a>
+   </div>
+  </nav>
+
+  <h1>Mintsuki infrastructure things</h1>
+
+  <p>
+  Being the first blog post I've made on OS,
+  even better, the first blog post I've made in general,
+  this will be a fun read. I apologize in advance-
+  I promise to restore any loss of cognition that occurs
+  as a result of this read.
+  </p>
+
+  <p>
+  Having taken a lovely, albeit sometimes confusing course on OS theory
+  from my university, I decided to do it myself.
+  "<a href="https://github.com/mit-pdos/xv6-public">xv6</a> 
+  doesn't seem too hard to write, I could do that,"
+  I thought. So far, I've eaten crow, but have learned a metric crap ton
+  about <a href="https://osdev.wiki/wiki/Limine">limine</a>, and
+  drawing text in <a href="https://osdev.wiki/wiki/VGA_Fonts">VGA graphics mode</a>.
+  If you want, you could probably skip the rest of this post
+  by checking out those last two links, but I'll be going on anyway. I'll miss you!
+  </p>
+
+  <p>
+  Firstly, limine, a project by <a href="https://github.com/mintsuki">mintsuki</a>,
+  is a great, quick and easy way to get into long mode.
+  Simply add a few requests to your kernel's C source, ensure gcc is appeased,
+  linking and compiling happens, and you're basically ready to go.
+  No assembly code required.
+  One issue, though, is that there's not a lot of easy ways to acquire
+  "bitmaps" of fonts once you're in such a deep mode.
+  Protected mode has ways to program VGA registers,
+  and real mode has ways to copy the BIOS stored bitmap from BIOS calls.
+  </p>
+
+  <p>
+  There's a few ways around this: hardcoding bitmaps into kernel code,
+  or reading from some file in a filesystem.
+  Currently, I get around this using
+  <a href="https://github.com/mintsuki/flanterm">flanterm</a>,
+  another cool project by mintsuki.
+  For now, this basically favors the hardcoding bitmap approach,
+  so it should honestly be trashed ASAP in favor of something else.
+  </p>
+
+  <p>
+  And that's basically it. Today president Trump got shot, ironically,
+  so I'm giving it a rest for now before the world blows up.
+  I'll see you all on the other side.
+  </p>
+
+  <!-- not even trying to center this div idgaf -->
+  <div class="tenor-gif-embed" data-postid="9805470240241642171" data-share-method="host" data-aspect-ratio="1" data-width="50%"><a href="https://tenor.com/view/cool-cats-blue-cat-sweat-nervous-sweating-gif-9805470240241642171">Cool Cats Blue Cat GIF</a>from <a href="https://tenor.com/search/cool+cats-gifs">Cool Cats GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+ </body></html>
